@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>navigator</title>
+	<style>
+		table{
+			border: 2px solid darkred;
+			
+		}
+	</style>
+
+</head>
+<body>
+	<h1>navigaor plateform defination</h1>
+	<p>navigator of the plateform is nothing but the we we hae perform the currently task and the currently programm is know as the navigator plateform...</p>
+
+
+	<button id="btn" style="color:green;">click</button>
+<table>
+	
+	<h5>platform :<span id="p"></span></h5>
+	<!-- <h5>platform :</h5></th><tr><td><span id="p"></span></td></tr> -->
+	<h5>platform lan :<span id="l"></span></h5>
+	<h5>platform appname :<span id="an"></span></h5>
+	<h5>platform appcode:<span id="ac"></span></h5>
+	<h5>platform appverson:<span id="apv"></span></h5>
+	<h5>platform auserAgent:<span id="uA"></span></h5>
+	<h5>platform online:<span id="onl"></span></h5>
+
+</table>
+	<script>
+	var x=navigator.platform;
+	var y=navigator.language;
+	var z=navigator.appName;
+	var a=navigator.appCode;
+	var b=navigator.appVersion;
+	var c=navigator.userAgent;
+	var d=navigator.onLine;
+	var btn =document.getElementById('btn')
+		btn.addEventListener('click',function (){
+			// document.getElementById('p').innerHTML=navigator.platform;
+	document.getElementById('p').innerHTML=`${x}`;
+	document.getElementById('l').innerHTML=`${y}`;
+	document.getElementById('an').innerHTML=`${z}`;
+	document.getElementById('ac').innerHTML=`${a}`;
+	document.getElementById('apv').innerHTML=`${b}`;
+	document.getElementById('uA').innerHTML=`${c}`;
+	document.getElementById('onl').innerHTML=`${d}`;
+});
+</script>
+	
+
+</body>
+
+
+</html>
